@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu main";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: lightblue;
+    grid-area: header;
+}
+.menu {
+    background-color: lightgray;
+    grid-area: menu;
+}
+.main {
+    background-color: whitesmoke;
+    grid-area: main;
+}
+
